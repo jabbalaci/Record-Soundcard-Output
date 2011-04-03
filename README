@@ -1,0 +1,34 @@
+Recording soundcard output
+==========================
+
+Author:  Laszlo Szathmary, 2011 (jabba.laci@gmail.com)
+Website: https://ubuntuincident.wordpress.com/2011/03/26/recording-soundcard-output/
+Github:  https://github.com/jabbalaci/Record-Soundcard-Output
+Version: 0.1
+
+Capture and record any audio output that comes through the soundcard. Requires ALSA.
+Please refer to the website of the project for more details.
+
+Usage:
+
+./01-verify.py
+    Verify your current settings. It is a good idea to write down
+    these settings to know what to restore later.
+    You can edit 03-Skype-restore-rec-to-microphone.py and specify
+    these values.
+
+./02-set-for-rec-soundcard-output.py
+    Change settings for recording soundcard output.
+    Default values: 'Mix', 'on', and 3. You might want to 
+    change these values in the source.
+
+./04-start-rec-soundcard-output.py
+    Start recording. The script will ask the name of the
+    output file. If you press ENTER, the script will generate
+    a unique name. By default, the output will be stored in the 
+    "output" folder.
+
+./03-Skype-restore-rec-to-microphone.py
+    Restore settings for recording the microphone. Edit the
+    source and set those values that you wrote down at the
+    beginning.
